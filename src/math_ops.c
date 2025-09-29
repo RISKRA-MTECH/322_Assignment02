@@ -61,6 +61,9 @@ float factorial(int n)
 
 float sin_taylor(float x, int steps) 
 {
+    //DUMMY
+    return 1.0; // change applied
+
     const float pi = 3.14159265358979323846;
     x = x * pi / 180.0; // Convert degrees to radians
 
