@@ -7,18 +7,10 @@ char * AUTHOR_AUTHORSHIP = (char *) "I acknowledge that I have worked on this as
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-//#include "code.c"
-//#include "code2.c"
+#include <math_ops.h>
 
 //#include "tests\tests.c"
 // ----------------- MAIN PROGRAM -----------------
-
-
-float sub(float a, float b)
-{
-    return a - b;
-}
-
 
 int main(int argc, char *argv[]) 
 {
@@ -56,6 +48,41 @@ int main(int argc, char *argv[])
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
         }
+        else if (strcmp(argv[1], "--addition") == 0 && argc == 4) 
+        {
+            printf("%f\n", add(atof(argv[2]), atof(argv[3])));
+        }
+        else if (strcmp(argv[1], "--subtraction") == 0 && argc == 4) 
+        {
+            printf("%f\n", sub(atof(argv[2]), atof(argv[3])));
+        }
+        else if (strcmp(argv[1], "--multiplication") == 0 && argc == 4) 
+        {
+            printf("%f\n", multiply(atof(argv[2]), atof(argv[3])));
+        }
+        else if (strcmp(argv[1], "--division") == 0 && argc == 4) 
+        {
+            printf("%f\n", divide(atof(argv[2]), atof(argv[3])));
+        }
+        else if (strcmp(argv[1], "--power") == 0 && argc == 4)
+        {
+            float result = power(atof(argv[2]), atoi(argv[3]));
+            printf("Result: %.2f\n", result);
+        }
+        else if (strcmp(argv[1], "--square") == 0 && argc == 3) 
+        {
+            printf("%f\n", square(atof(argv[2])));
+        }
+        else if (strcmp(argv[1], "--cube") == 0 && argc == 3) 
+        {
+            printf("%f\n", cube(atof(argv[2])));
+        }
+        else
+        {
+            printf("Wrong parameter. Use --help to see available options.\n");
+            return 1; // Wrong parameter
+        }
+        
     }
     else
     {
@@ -67,4 +94,3 @@ int main(int argc, char *argv[])
 
     return failed_tests; // cmd/powershell:  echo $LASTEXITCODE
 }
-
