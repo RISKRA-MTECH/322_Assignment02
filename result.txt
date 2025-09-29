@@ -1,37 +1,81 @@
-Folder PATH listing
-Volume serial number is 5AD8-228B
-C:.
-¦   .gitignore
-¦   code.c
-¦   code2.c
-¦   Makefile
-¦   result.txt
-¦   
-+---.vscode
-¦       launch.json
-¦       settings.json
-¦       tasks.json
-¦       
-+---bin
-¦       main.exe
-¦       tests.exe
-¦       
-+---include
-+---obj
-¦       code.o
-¦       main.o
-¦       tests.o
-¦       unity.o
-¦       
-+---src
-¦       main.c
-¦       
-+---tests
-        tests.c
-        unity.c
-        unity.h
-        unity_internals.h
-        
+* commit e87a260df2d8625282f0838aa472534f901085cf
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Mon Sep 29 00:59:12 2025 -0600
+| 
+|     Update .gitignore
+| 
+* commit 67e1c8d0a74a638ef12872a7ae5b729a20c999f6
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Mon Sep 29 00:58:40 2025 -0600
+| 
+|     Update main
+| 
+* commit b96d18a04619bfdb74211fc8728760ac983b63d6
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Mon Sep 29 00:58:21 2025 -0600
+| 
+|     Update math_ops
+| 
+* commit b57a7f2aa2d1adee0856695f66af9fbdcf9714e6
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Mon Sep 29 00:19:11 2025 -0600
+| 
+|     Update Makefile
+| 
+* commit 765ce5f5717c5a23c174e156f1ce4545be00c309
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Sun Sep 28 23:17:50 2025 -0600
+| 
+|     Created include/math_ops.h
+| 
+* commit 021cd039cf62577f8b1617224e250c30b1ea7dc5
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Sun Sep 28 23:09:32 2025 -0600
+| 
+|     Deleted code.c, code2.c, and obj/code.o
+| 
+* commit c7eb0e7dd2908ab414ded8c2be4e2589701714c6
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Sun Sep 28 23:07:10 2025 -0600
+| 
+|     Combined code.c and code2.c into math_ops.c
+| 
+* commit 0172015a475989e4132ff786dc58cc01d0f1b3bf
+| Author: Jacob Pach <jpach@mtech.edu>
+| Date:   Tue Sep 16 13:18:55 2025 -0600
+| 
+|     update gitignore
+| 
+* commit b135f73754c9663ec24ff8b99bfa293a4c0d9e08
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Mon Sep 15 10:18:29 2025 -0600
+| 
+|     Update README.md
+| 
+* commit ac72030664d874b40f7c25263d11d634e65fb5bb
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:40:11 2025 -0600
+| 
+|     Update README.md
+| 
+* commit 6ef4aa973d153f528af36c61992f6bc19d9e25b0
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:38:26 2025 -0600
+| 
+|     Update README.md
+| 
+* commit d0d54cb34b91099cbd941b6689a8b61c7e997d6b
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:37:19 2025 -0600
+| 
+|     Update README.md
+| 
+* commit 33d73a84aaedfad70cf066c4235bff9f83400aa3
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:36:42 2025 -0600
+| 
+|     Create README.md
+| 
 * commit fb42b831ea271382743302f3607ab2fd105726c7
 | Author: Jacob Pach <jpach@mtech.edu>
 | Date:   Fri Sep 12 07:15:01 2025 -0600
@@ -93,4 +137,4 @@ C:.
   Date:   Fri Sep 12 07:01:45 2025 -0600
   
       add main.c, makefile
-https://github.com/jpach-cs/322_Assignment02.git
+https://github.com/RISKRA-MTECH/322_Assignment02
