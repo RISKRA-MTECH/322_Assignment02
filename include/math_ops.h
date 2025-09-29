@@ -11,5 +11,6 @@ float sub(float x, float y);
 float divide(float x, float y);
 float factorial(int n);
 float sin_taylor(float x, int steps);
+float cos_taylor(float x, int steps);
 
 #endif // MATH_OPS_H

@@ -52,6 +52,7 @@ int main(int argc, char *argv[])
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
             printf("  --sin x              Calculate sine of x (degrees) using Taylor series\n");
+            printf("  --cos x              Calculate cosine of x (degrees) using Taylor series\n");
         }
         else if (strcmp(argv[1], "--addition") == 0 && argc == 4) 
         {
@@ -86,6 +87,11 @@ int main(int argc, char *argv[])
         {
             float result = sin_taylor(atof(argv[2]), 10);
             printf("sin(%.2f degrees) = %.6f\n", atof(argv[2]), result);
+        }
+        else if (strcmp(argv[1], "--cos") == 0 && argc == 3) 
+        {
+            float result = cos_taylor(atof(argv[2]), 10);
+            printf("cos(%.2f degrees) = %.6f\n", atof(argv[2]), result);
         }
         else
         {
