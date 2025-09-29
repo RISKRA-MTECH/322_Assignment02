@@ -25,9 +25,13 @@ int main(int argc, char *argv[])
 
     printf("%s\n", argv[0]);
     printf("%s\n", argv[1]);
-    printf("%s\n", argv[2]);
-    printf("%s\n", argv[3]);
-    printf("%f\n", atof(argv[2]) );
+    if(argc > 2)
+    {
+        printf("%s\n", argv[2]);
+        if(argc > 3)
+            printf("%s\n", argv[3]);
+        printf("%f\n", atof(argv[2]));
+    }
 
     if (argc > 1 )
     {
@@ -47,6 +51,7 @@ int main(int argc, char *argv[])
             printf("  --power a b          Raise a to the power of b\n");
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
+            printf("  --sin x              Calculate sine of x (degrees) using Taylor series\n");
         }
         else if (strcmp(argv[1], "--addition") == 0 && argc == 4) 
         {
@@ -77,12 +82,16 @@ int main(int argc, char *argv[])
         {
             printf("%f\n", cube(atof(argv[2])));
         }
+        else if (strcmp(argv[1], "--sin") == 0 && argc == 3) 
+        {
+            float result = sin_taylor(atof(argv[2]), 10);
+            printf("sin(%.2f degrees) = %.6f\n", atof(argv[2]), result);
+        }
         else
         {
             printf("Wrong parameter. Use --help to see available options.\n");
             return 1; // Wrong parameter
         }
-        
     }
     else
     {
