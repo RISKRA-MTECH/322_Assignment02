@@ -1,3 +1,50 @@
+G:\School\ESOF 322\322_Assignment02\bin\main.exe
+--sin
+45
+45.000000
+sin(45.00 degrees) = 0.707107
+G:\School\ESOF 322\322_Assignment02\bin\main.exe
+--cos
+45
+45.000000
+cos(45.00 degrees) = 0.707107
+https://github.com/RISKRA-MTECH/322_Assignment02
+* commit 2489d0bc2fb504fc0eb5afe77c22c2dce2b6dbdc
+| Author: RISKRA-MTECH <riskra@mtech.edu>
+| Date:   Mon Sep 29 12:42:25 2025 -0600
+| 
+|     Added cos() function back
+| 
+* commit 684ec25e0c5121ea33f037ea8096ba51b93e57f3
+| Author: RISKRA-MTECH <riskra@mtech.edu>
+| Date:   Mon Sep 29 12:40:31 2025 -0600
+| 
+|     Restore correct implementation of sin()
+| 
+* commit 3994c7ebcc952c6af62c773b1a7507e22c43e680
+| Author: RISKRA-MTECH <riskra@mtech.edu>
+| Date:   Mon Sep 29 12:36:07 2025 -0600
+| 
+|     Add cos() function with Taylor series
+| 
+* commit d22ed75dd7fbf6ef1b10e8302ae1c5defd5d015f
+| Author: RISKRA-MTECH <riskra@mtech.edu>
+| Date:   Mon Sep 29 12:28:03 2025 -0600
+| 
+|     Dummy version of sin() returning 1.0
+| 
+* commit abc23c3afb8d83204fc39bbb6ce9c4e6334622aa
+| Author: RISKRA-MTECH <riskra@mtech.edu>
+| Date:   Mon Sep 29 12:26:09 2025 -0600
+| 
+|     Add sin() function with Taylor series
+| 
+* commit caa919c7d3fca4f2b35cdc526a36a81642d6ef5b
+| Author: Ryan Iskra <riskra@mtech.edu>
+| Date:   Mon Sep 29 01:02:54 2025 -0600
+| 
+|     Update result.txt
+| 
 * commit e87a260df2d8625282f0838aa472534f901085cf
 | Author: Ryan Iskra <riskra@mtech.edu>
 | Date:   Mon Sep 29 00:59:12 2025 -0600
@@ -137,4 +184,39 @@
   Date:   Fri Sep 12 07:01:45 2025 -0600
   
       add main.c, makefile
-https://github.com/RISKRA-MTECH/322_Assignment02
+Folder PATH listing for volume Main
+Volume serial number is 3E2C-E1F8
+G:.
+�   .gitignore
+�   Makefile
+�   README.md
+�   result.txt
+�   
++---.vscode
+�       launch.json
+�       settings.json
+�       tasks.json
+�       
++---bin
+�       main.exe
+�       tests.exe
+�       
++---include
+�       math_ops.h
+�       
++---obj
+�       main.o
+�       math_ops.o
+�       tests.o
+�       unity.o
+�       
++---src
+�       main.c
+�       math_ops.c
+�       
++---tests
+        tests.c
+        unity.c
+        unity.h
+        unity_internals.h
+        
